@@ -102,6 +102,7 @@ export default settings => {
 			const temp = [...words]; // Thanks React
 			temp.splice(i, 1);
 			setWords(temp);
+			settings.updateSetting("words", temp);
 		}} />)}
 	</>;
 }
