@@ -9,12 +9,12 @@ const currentUserId = getModule("getId").getId();
 const FriendsModule = getModule("isBlocked");
 const GuildStore = getModule("getGuild");
 const SelectedChannelStore = getModule("getChannelId", "getLastSelectedChannelId")
-const SelectedGuildStore = getModule("getGuildId", "getLastSelectedGuildId");
 const UnreadStore = getModule("getUnreadCount");
 const MemberStore = getModule("getMember");
 const AvatarModule = getModule("getUserAvatarURL");
 const escapeString = string => string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 const Native = getModule("purgeMemory", "ensureModule");
+
 
 export default class WordNotifications extends Plugin {
 	start() {
